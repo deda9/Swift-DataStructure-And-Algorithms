@@ -1,6 +1,7 @@
 
 /**
  * two sum algorithm, take an array and tagert and return the indices which thier sum == this target
+ * and this solution cost n2  (n power 2)
  */
 class TwoSum {
     static func excute(in array: [Int], target: Int) -> (Int, Int){
