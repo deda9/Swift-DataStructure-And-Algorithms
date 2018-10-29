@@ -10,4 +10,6 @@ Resources:
 
 [Array Subscript Meduim](https://medium.com/@abhimuralidharan/subscripts-in-swift-51e73cc5ddb5)
 
+[geeksforgeeks](http://geeksforgeeks.org)
+
 
