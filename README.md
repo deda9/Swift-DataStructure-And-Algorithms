@@ -8,4 +8,6 @@ Resources:
 
 [Sean Allen Youtube](https://www.youtube.com/watch?v=cUmGngurKXo)
 
+[Array Subscript Meduim](https://medium.com/@abhimuralidharan/subscripts-in-swift-51e73cc5ddb5)
+
 
