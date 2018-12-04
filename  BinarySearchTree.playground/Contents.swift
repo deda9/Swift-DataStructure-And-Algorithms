@@ -8,6 +8,22 @@ class Node<T> {
         self.leftNode = left
         self.rightNode = right
     }
+    
+    func maximum() -> Node<T>{
+        var node = self
+        while let next = node.rightNode {
+            node = next
+        }
+        return node
+    }
+    
+    func minimum() -> Node<T> {
+        var node = self
+        while let next = node.leftNode {
+            node = next
+        }
+        return node
+    }
 }
 
 class BinarySearchTree<T> where T: Comparable {
@@ -50,6 +66,13 @@ class BinarySearchTree<T> where T: Comparable {
             return nil
         }
     }
+    
+    func maximum() -> Node<T> {
+        return self.root!.maximum()
+    }
+    func minimum() -> Node<T> {
+        return self.root!.minimum()
+    }
 }
 
 extension BinarySearchTree: CustomStringConvertible {
@@ -91,6 +114,9 @@ class Tester {
         let foundValue = bst.search(root: bst.root!, value: 8)
         print("found value left node: ", foundValue?.leftNode?.value ?? "not found")
         print("found value right node: ", foundValue?.rightNode?.value ?? "not found")
+        
+        print("max value in tree: ", bst.maximum().value)
+        print("min value in tree: ", bst.minimum().value)
     }
 }
 
